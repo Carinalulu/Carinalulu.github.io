@@ -262,6 +262,160 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/24/flex布局-兼容性/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Carina">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/timg.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Carina">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/24/flex布局-兼容性/" itemprop="url">flex布局(兼容性)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-24T11:24:19+08:00">
+                2018-08-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>之前看了阮一峰讲解的flex布局，真的是觉得很好用啊，然后最近在做的一个项目中几乎都是以flex布局为主，然而，项目在测试阶段的时候，一个很严重的问题，一开始在做这个项目的时候，忘记考虑浏览器的兼容性了，泪崩~~然后我就仔仔细细的看了一下关于flex的兼容性，flex布局从旧版本dispaly: box;，到dispaly: flexbox;，再到现在的标准版本display: flex;。浏览器是从IE10以上开始支持flex布局的，但是IE10的是-ms形式的。下面是各个浏览器对flex布局的支持情况：<br><img src="https://i.imgur.com/sjXco5b.png" alt=""><br>兼容性写法：</p>
+<ol>
+<li><p>display:box/flexbox/flex 的兼容<br><code>display:-webkit-box;</code><br><br><code>display: -moz-box;</code><br><br><code>display: -ms-flexbox;</code><br><br><code>display: -webkit-flex;</code><br><br><code>display: flex;</code></p>
+</li>
+<li><p>flex-direction的兼容 <br><br> <code>-webkit-box-orient:vertical;</code><br><br> <code>-webkit-box-direction:normal;</code><br><br> <code>-moz-box-orient:vertical;</code><br><br> <code>-moz-box-direction:normal;</code><br> <code>flex-direction:column;</code><br><br> <code>-webkit-flex-direction:column;</code></p>
+</li>
+<li><p>flex-wrap的兼容<br><br> <code>-webkit-flex-wrap:wrap;</code><br><br> <code>-webkit-box-lines:multiple;</code><br><br> <code>-moz-flex-wrap:wrap;</code><br><br> <code>flex-wrap:wrap;</code></p>
+</li>
+<li><p>justify-content的兼容<br><br> <code>-webkit-justify-content:center;</code><br><br> <code>justify-content:center;</code><br><br> <code>-moz-box-pack:center;</code><br><br> <code>-webkit--moz-box-pack:center;</code><br><br> <code>box-pack:center;</code></p>
+</li>
+<li><p>align-items的兼容<br><br> <code>align-items:center;</code><br><br> <code>-webkit-align-items:center;</code><br><br> <code>box-align:center;</code><br><br> <code>-moz-box-align:center;</code><br><br> <code>-webkit-box-align:center;</code></p>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/20/CSS3修改input样式/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1012,7 +1166,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1034,7 +1188,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
