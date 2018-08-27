@@ -88,7 +88,7 @@
 <meta property="og:description" content="之前看了阮一峰讲解的flex布局，真的是觉得很好用啊，然后最近在做的一个项目中几乎都是以flex布局为主，然而，项目在测试阶段的时候，一个很严重的问题，一开始在做这个项目的时候，忘记考虑浏览器的兼容性了，泪崩~~然后我就仔仔细细的看了一下关于flex的兼容性，flex布局从旧版本dispaly: box;，到dispaly: flexbox;，再到现在的标准版本display: flex;。浏览器">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.imgur.com/sjXco5b.png">
-<meta property="og:updated_time" content="2018-08-27T05:50:58.453Z">
+<meta property="og:updated_time" content="2018-08-27T05:52:46.937Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="flex布局(兼容性)">
 <meta name="twitter:description" content="之前看了阮一峰讲解的flex布局，真的是觉得很好用啊，然后最近在做的一个项目中几乎都是以flex布局为主，然而，项目在测试阶段的时候，一个很严重的问题，一开始在做这个项目的时候，忘记考虑浏览器的兼容性了，泪崩~~然后我就仔仔细细的看了一下关于flex的兼容性，flex布局从旧版本dispaly: box;，到dispaly: flexbox;，再到现在的标准版本display: flex;。浏览器">
@@ -358,13 +358,13 @@
 <ol>
 <li><p>display:box/flexbox/flex 的兼容<br><code>display:-webkit-box;</code><br><code>display: -moz-box;</code><br><code>display: -ms-flexbox;</code><br><code>display: -webkit-flex;</code><br><code>display: flex;</code></p>
 </li>
-<li><p>flex-direction的兼容 <br><br> <code>-webkit-box-orient:vertical;</code><br> <code>-webkit-box-direction:normal;</code><br> <code>-moz-box-orient:vertical;</code><br> <code>-moz-box-direction:normal;</code><br> <code>flex-direction:column;</code><br> <code>-webkit-flex-direction:column;</code></p>
+<li><p>flex-direction的兼容 <br><code>-webkit-box-orient:vertical;</code><br> <code>-webkit-box-direction:normal;</code><br> <code>-moz-box-orient:vertical;</code><br> <code>-moz-box-direction:normal;</code><br> <code>flex-direction:column;</code><br> <code>-webkit-flex-direction:column;</code></p>
 </li>
-<li><p>flex-wrap的兼容<br><br> <code>-webkit-flex-wrap:wrap;</code><br> <code>-webkit-box-lines:multiple;</code><br> <code>-moz-flex-wrap:wrap;</code><br> <code>flex-wrap:wrap;</code></p>
+<li><p>flex-wrap的兼容<br><code>-webkit-flex-wrap:wrap;</code><br> <code>-webkit-box-lines:multiple;</code><br> <code>-moz-flex-wrap:wrap;</code><br> <code>flex-wrap:wrap;</code></p>
 </li>
-<li><p>justify-content的兼容<br><br> <code>-webkit-justify-content:center;</code><br> <code>justify-content:center;</code><br> <code>-moz-box-pack:center;</code><br> <code>-webkit--moz-box-pack:center;</code><br> <code>box-pack:center;</code></p>
+<li><p>justify-content的兼容<br><code>-webkit-justify-content:center;</code><br> <code>justify-content:center;</code><br> <code>-moz-box-pack:center;</code><br> <code>-webkit--moz-box-pack:center;</code><br> <code>box-pack:center;</code></p>
 </li>
-<li><p>align-items的兼容<br><br> <code>align-items:center;</code><br> <code>-webkit-align-items:center;</code><br> <code>box-align:center;</code><br> <code>-moz-box-align:center;</code><br> <code>-webkit-box-align:center;</code></p>
+<li><p>align-items的兼容<br><code>align-items:center;</code><br> <code>-webkit-align-items:center;</code><br> <code>box-align:center;</code><br> <code>-moz-box-align:center;</code><br> <code>-webkit-box-align:center;</code></p>
 </li>
 </ol>
 
